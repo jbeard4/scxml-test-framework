@@ -12,7 +12,7 @@
 		{
 			"event" : { "name" : "bat" },
 			"nextConfiguration" : ["d"]
-		},
+		}
 	]
 }
 
