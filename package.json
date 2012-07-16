@@ -32,7 +32,8 @@
     "dependencies": {
         "request" : "*",
         "underscore" : "*",
-        "nopt" : "*"
+        "nopt" : "*",
+        "node-static" : "*"
     },
     "engines" : { "node" : ">=0.4.7" },
     "main": "./lib/test-client"
