@@ -109,9 +109,9 @@ Testing Protocol
 
 A test case involves the following sequence of events:
 
-1. The client selects a test case, and sends the server a "load" event and the associated SCXML document.
-2. The server receives request to load the SCXML document, and creates a new SCXML session from the document. The server also generates a token that can be used to map subsequent client requests back to the newly-created SCXML session. The server then returns initial configuration of the SCXML session, and the generated token, to the client on the HTTP response.
-3. The client receives server response, and compares the returned initial configuration to the expected initial configuration specified in the test script. 
+1. The client selects a test case, and sends the server a "load" event and a URL pointing to the associated SCXML document (the test client is also running a simple HTTP file server, and so is able to serve this document). 
+2. The server receives request to load the SCXML document, downloads the document via an HTTP GET request, and creates a new SCXML session from the document. The server also generates a token that can be used to map subsequent client requests back to the newly-created SCXML session. The server then returns initial configuration of the SCXML session, and the generated token, to the client on the HTTP response.
+3. The client receives the server response, and compares the returned initial configuration to the expected initial configuration specified in the test script. 
 4. For each event and expected configuration in JSON test script:
     1. The client sends event to server. Each event is sent along with SCXML session token. 
     2. The server receives the event and token, and uses the token to retrieve SCXML session. The server then dispatches the received event on the SCXML session, and returns the new SCXML session configuration to the client on the HTTP response. 
@@ -127,7 +127,7 @@ Client request to load statechart.
 
 ```json
     {
-        "load":"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\\n<!--\\n   Copyright 2011-2012 Jacob Beard, INFICON, and other SCION contributors\\n\\n   Licensed under the Apache License, Version 2.0 (the \\"License\\");\\n   you may not use this file except in compliance with the License.\\n   You may obtain a copy of the License at\\n\\n       http://www.apache.org/licenses/LICENSE-2.0\\n\\n   Unless required by applicable law or agreed to in writing, software\\n   distributed under the License is distributed on an \\"AS IS\\" BASIS,\\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\\n   See the License for the specific language governing permissions and\\n   limitations under the License.\\n-->\\n<scxml \\n\\txmlns=\\"http://www.w3.org/2005/07/scxml\\"\\n\\tversion=\\"1.0\\"\\n\\tprofile=\\"ecmascript\\"\\n\\tid=\\"root\\">\\n\\n\\t<initial id=\\"intitial1\\">\\n\\t\\t<transition target=\\"a\\"/>\\n\\t</initial>\\n\\n\\t<state id=\\"a\\">\\n\\t\\t<transition target=\\"b\\" event=\\"t\\"/>\\n\\t</state>\\n\\n\\t<state id=\\"b\\"/>\\n\\n</scxml>\\n"
+        "load":"http://localhost:9999/test/basic/basic1.scxml"
     }
 ```
 
