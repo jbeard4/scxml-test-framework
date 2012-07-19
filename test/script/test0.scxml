@@ -28,6 +28,10 @@
 		</transition>
 	</initial>
 
+	<datamodel>
+		<data id="a"/>
+	</datamodel>
+
 	<state id="a">
 		<transition target="b" event="t" cond="getData('a') === 100"/>
 		<transition target="f" event="t" />

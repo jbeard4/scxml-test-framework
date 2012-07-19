@@ -20,6 +20,10 @@
 	profile="ecmascript"
 	id="root">
 
+    <datamodel>
+        <data id="a"/>
+    </datamodel>
+
 	<initial id="intitial1">
 		<transition target="a">
 			<script src="script-0-0.js"/>

@@ -24,6 +24,10 @@
 		<transition target="a"/>
 	</initial>
 
+	<datamodel>
+		<data id="i"/>
+	</datamodel>
+
 	<state id="a">
 		<transition target="b" event="t">
 			<script>
