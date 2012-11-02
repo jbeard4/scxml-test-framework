@@ -27,7 +27,7 @@
 
 	<state id="a">
 		<transition target="b" event="t">
-			<send eventexpr="'s1'" namelist="foo bar" type="#_internal">
+			<send eventexpr="'s1'" namelist="foo bar" target="#_internal">
 				<param name="bif" location="bat"/>
 				<param name="belt" expr="4"/> 
 			</send>
@@ -41,7 +41,7 @@
 				_event.data.bif === 3 &amp;&amp;
 				_event.data.belt === 4">
 
-			<send eventexpr="'s2'" type="#_internal">
+			<send eventexpr="'s2'" target="#_internal">
 				<content>More content.</content>
 			</send>
 
