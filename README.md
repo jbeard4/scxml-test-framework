@@ -160,5 +160,8 @@ Server response with next state configuration
 Server Implementation
 --------------------
 
-An example of an SCXML test server implementation can be found in the SCION project [here](https://github.com/jbeard4/SCION/tree/master/test).
-
+The following are examples of SCXML test server implementations:
+* [JavaScript (node.js)](https://github.com/jbeard4/SCION/blob/master/test/node-test-server.js)
+* [JavaScript (Rhino)](https://github.com/jbeard4/SCION/blob/master/test/rhino-test-server.js)
+* [Python](https://github.com/jbeard4/pySCION/blob/master/test/test-server.py)
+* [C#](https://github.com/jbeard4/SCION.NET/blob/master/test/TestServer.cs)
