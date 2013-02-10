@@ -30,7 +30,9 @@
 	</state>
 
 	<parallel id="p">
-		<history id="hp" type="deep"/>
+		<history id="hp" type="deep">
+            <transition target="b"/>
+        </history>
 
 		<state id="b" initial="hb">
 

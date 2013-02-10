@@ -23,7 +23,9 @@ illustrates deep history with many parallel states
 	initial="a">
 
 	<parallel id="a">
-		<history id="ha" type="deep"/>
+		<history id="ha" type="deep">
+            <transition target="b"/>
+        </history>
 
 		<parallel id="b">
 			<parallel id="c">
