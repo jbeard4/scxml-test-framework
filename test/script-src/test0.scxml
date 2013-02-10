@@ -19,7 +19,7 @@
 	version="1.0">
 
     <datamodel>
-        <data id="a"/>
+        <data id="x"/>
     </datamodel>
 
     <state id="initial">
@@ -29,7 +29,7 @@
     </state>
 
 	<state id="a">
-		<transition target="b" event="t" cond="getData('a') === 100"/>
+		<transition target="b" event="t" cond="getData('x') === 100"/>
 		<transition target="f" event="t" />
 	</state>
 

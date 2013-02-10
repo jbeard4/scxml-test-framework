@@ -19,19 +19,19 @@
 	version="1.0">
 
 	<datamodel>
-		<data id="a"/>
+		<data id="x"/>
 	</datamodel>
 
 	<state id="a">
 		<onentry>
 			<!-- first -1 will be assigned to the datamodel. then, in the same small-step, this will be overridden by the 99 -->
-			<assign location="a" expr="-1"/>
-			<assign location="a" expr="99"/>
+			<assign location="x" expr="-1"/>
+			<assign location="x" expr="99"/>
 		</onentry>
 
 		<!-- in order for this transition to be taken, a must be updated immediately, in the same small-step -->
-		<transition  event="t" target="b" cond="a === 99">
-			<assign location="a" expr="a + 1"/>
+		<transition  event="t" target="b" cond="x === 99">
+			<assign location="x" expr="x + 1"/>
 		</transition>
 	</state>
 
@@ -39,11 +39,11 @@
 		<!-- use regular assignment syntax, assuming datamodel variables are in script scope -->
 		<onentry>
 			<script>
-				a *= 2;
+				x *= 2;
 			</script>
 		</onentry>
 
-		<transition target="c" cond="a === 200"/>
+		<transition target="c" cond="x === 200"/>
 		<transition target="f"/>
 	</state>
 
@@ -53,7 +53,3 @@
 
 
 </scxml>
-
-
-
-

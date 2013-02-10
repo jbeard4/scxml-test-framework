@@ -1,1 +1,1 @@
-setData('a',100);
+setData('x',100);
