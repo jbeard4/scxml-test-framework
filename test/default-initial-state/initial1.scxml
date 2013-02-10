@@ -16,8 +16,7 @@
 -->
 <scxml 
 	xmlns="http://www.w3.org/2005/07/scxml"
-	version="1.0"
-	profile="ecmascript" >
+	version="1.0">
 	<!-- notice that no id is specified here -->
 
 	<state id="a">

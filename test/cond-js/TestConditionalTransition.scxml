@@ -22,8 +22,7 @@ transitions originating from the same state.
 <scxml 
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
-	name="root"
-	profile="ecmascript">
+	name="root">
 
 	<initial>
 		<transition target="a"/>
