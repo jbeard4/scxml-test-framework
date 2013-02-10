@@ -33,7 +33,7 @@
 	</state>
 
 	<state id="a">
-		<transition target="b" event="t" cond="getData('x') === 100"/>
+		<transition target="b" event="t" cond="x === 100"/>
 		<transition target="f" event="t" />
 	</state>
 

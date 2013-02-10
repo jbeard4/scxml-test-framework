@@ -30,10 +30,10 @@
 	</state>
 
 	<state id="b">
-		<transition target="b" cond="getData('i') &lt; 100">
+		<transition target="b" cond="i &lt; 100">
 			<script src="script-1-1.js"/>
 		</transition>
-		<transition target="c" cond="getData('i') === 100"/>
+		<transition target="c" cond="i === 100"/>
 	</state>
 
 	<state id="c"/>

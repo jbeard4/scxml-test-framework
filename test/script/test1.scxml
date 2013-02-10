@@ -19,25 +19,24 @@
 	version="1.0">
 
 	<datamodel>
-		<data id="i"/>
+		<data id="x"/>
 	</datamodel>
 
 	<state id="a">
 		<transition target="b" event="t">
-			<assign location="i" expr="0"/>
 			<script>
-				setData('i',0)
+				x = 0;
 			</script>
 		</transition>
 	</state>
 
 	<state id="b">
-		<transition target="b" cond="getData('i') &lt; 100">
+		<transition target="b" cond="x &lt; 100">
 			<script>
-				setData('i',getData('i') + 1)
+				x = x + 1;
 			</script>
 		</transition>
-		<transition target="c" cond="getData('i') === 100"/>
+		<transition target="c" cond="x === 100"/>
 	</state>
 
 	<state id="c"/>

@@ -31,25 +31,25 @@
 	<state id="A">
 
 		<state id="b">
-			<transition target="c" cond="getData('i') &lt; 100">
+			<transition target="c" cond="i &lt; 100">
 				<script src="script-2-1.js"/>
 			</transition>
 		</state>
 
 		<state id="c">
-			<transition target="b" cond="getData('i') &lt; 100">
+			<transition target="b" cond="i &lt; 100">
 				<script src="script-2-2.js"/>
 			</transition>
 		</state>
 
-		<transition target="d" cond="getData('i') === 100">
+		<transition target="d" cond="i === 100">
 			<script src="script-2-3.js"/>
 		</transition>
 	</state>
 
 
 	<state id="d">
-		<transition target="e" cond="getData('i') === 200"/>
+		<transition target="e" cond="i === 200"/>
 		<transition target="f"/>
 	</state>
 

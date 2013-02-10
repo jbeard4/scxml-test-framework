@@ -19,13 +19,13 @@
 	version="1.0">
 
 	<datamodel>
-		<data id="i"/>
+		<data id="x"/>
 	</datamodel>
 
 	<state id="a">
 		<transition target="b" event="t">
 			<script>
-				setData('i',0)
+				x = 0;
 			</script>
 		</transition>
 	</state>
@@ -33,31 +33,31 @@
 	<state id="A">
 
 		<state id="b">
-			<transition target="c" cond="getData('i') &lt; 100">
+			<transition target="c" cond="x &lt; 100">
 				<script>
-					setData('i',getData('i') + 1)
+                    x = x + 1;
 				</script>
 			</transition>
 		</state>
 
 		<state id="c">
-			<transition target="b" cond="getData('i') &lt; 100">
+			<transition target="b" cond="x &lt; 100">
 				<script>
-					setData('i',getData('i') + 1)
+					x = x + 1;
 				</script>
 			</transition>
 		</state>
 
-		<transition target="d" cond="getData('i') === 100">
+		<transition target="d" cond="x === 100">
 			<script>
-				setData('i',getData('i') * 2)
+                x = x * 2;
 			</script>
 		</transition>
 	</state>
 
 
 	<state id="d">
-		<transition target="e" cond="getData('i') === 200"/>
+		<transition target="e" cond="x === 200"/>
 		<transition target="f"/>
 	</state>
 
