@@ -25,10 +25,6 @@
 		<data id="i"/>
 	</datamodel>
 
-	<initial id="intitial1">
-		<transition target="a"/>
-	</initial>
-
 	<state id="a">
 		<transition target="b" event="t">
 			<assign location="i" expr="0"/>

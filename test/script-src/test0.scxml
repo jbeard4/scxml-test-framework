@@ -22,11 +22,11 @@
         <data id="a"/>
     </datamodel>
 
-	<initial id="intitial1">
+    <state id="initial">
 		<transition target="a">
 			<script src="script-0-0.js"/>
 		</transition>
-	</initial>
+    </state>
 
 	<state id="a">
 		<transition target="b" event="t" cond="getData('a') === 100"/>

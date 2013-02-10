@@ -10,9 +10,6 @@
       <ns0:log expr="&quot;doing A-&gt;B transition&quot;"/>
     </ns0:transition>
   </ns0:state>
-  <ns0:initial>
-    <ns0:transition target="A"/>
-  </ns0:initial>
   <ns0:state id="B">
     <ns0:transition target="A" event="e2"/>
   </ns0:state>

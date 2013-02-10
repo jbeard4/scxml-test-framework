@@ -21,9 +21,6 @@
     </ns0:state>
     <ns0:transition target="C" event="e1"/>
   </ns0:state>
-  <ns0:initial>
-    <ns0:transition target="AB"/>
-  </ns0:initial>
   <ns0:state id="C">
     <ns0:onentry>
       <ns0:log expr="&quot;entering state C&quot;"/>

@@ -18,10 +18,6 @@
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0">
 
-	<initial id="intitial1">
-		<transition target="p"/>
-	</initial>
-
 	<parallel id="p">
 		<state id="a"/>
 

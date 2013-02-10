@@ -18,13 +18,13 @@
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0">
 
-	<initial id="intitial1">
+	<state id="intitial1">
 		<transition target="a">
 			<script>
 				setData('a',100)
 			</script>
 		</transition>
-	</initial>
+	</state>
 
 	<datamodel>
 		<data id="a"/>

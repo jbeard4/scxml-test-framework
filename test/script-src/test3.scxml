@@ -24,13 +24,13 @@
         <data id="a"/>
     </datamodel>
 
-	<initial id="intitial1">
+	<state id="intitial1">
 		<transition target="a">
 			<script>
 			    foo();
 			</script>
 		</transition>
-	</initial>
+	</state>
 
 	<state id="a">
 		<transition target="b" event="t" cond="getData('a') === 100"/>

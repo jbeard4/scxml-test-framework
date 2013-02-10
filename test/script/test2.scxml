@@ -18,10 +18,6 @@
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0">
 
-	<initial id="intitial1">
-		<transition target="a"/>
-	</initial>
-
 	<datamodel>
 		<data id="i"/>
 	</datamodel>

@@ -20,11 +20,8 @@ This is to test the use of the In() predicate.
 -->
 <scxml 
 	xmlns="http://www.w3.org/2005/07/scxml"
+    initial="p1"
 	version="1.0">
-
-	<initial>
-		<transition target="p1"/>
-	</initial>
 
 	<parallel id="p1">
 

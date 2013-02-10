@@ -24,10 +24,6 @@ transitions originating from the same state.
 	version="1.0"
 	name="root">
 
-	<initial>
-		<transition target="a"/>
-	</initial>
-
 	<!-- default transition -->
 	<state id="a">
 		<transition target="b"/>
