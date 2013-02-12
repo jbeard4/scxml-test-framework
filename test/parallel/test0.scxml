@@ -16,14 +16,14 @@
 -->
 <scxml 
     datamodel="ecmascript"
-	xmlns="http://www.w3.org/2005/07/scxml"
-	version="1.0">
+    xmlns="http://www.w3.org/2005/07/scxml"
+    version="1.0">
 
-	<parallel id="p">
-		<state id="a"/>
+    <parallel id="p">
+        <state id="a"/>
 
-		<state id="b"/>
-	</parallel>
+        <state id="b"/>
+    </parallel>
 
 
 </scxml>

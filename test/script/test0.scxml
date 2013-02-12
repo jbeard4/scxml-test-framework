@@ -16,29 +16,29 @@
 -->
 <scxml 
     datamodel="ecmascript"
-	xmlns="http://www.w3.org/2005/07/scxml"
-	version="1.0">
+    xmlns="http://www.w3.org/2005/07/scxml"
+    version="1.0">
 
-	<datamodel>
-		<data id="x"/>
-	</datamodel>
+    <datamodel>
+        <data id="x"/>
+    </datamodel>
 
-	<state id="intitial1">
-		<transition target="a">
-			<script>
-				x = 100;
-			</script>
-		</transition>
-	</state>
+    <state id="intitial1">
+        <transition target="a">
+            <script>
+                x = 100;
+            </script>
+        </transition>
+    </state>
 
-	<state id="a">
-		<transition target="b" event="t" cond="x === 100"/>
-		<transition target="f" event="t" />
-	</state>
+    <state id="a">
+        <transition target="b" event="t" cond="x === 100"/>
+        <transition target="f" event="t" />
+    </state>
 
-	<state id="b"/>
+    <state id="b"/>
 
-	<state id="f"/>
+    <state id="f"/>
 
 
 </scxml>
