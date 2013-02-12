@@ -19,6 +19,7 @@ orthogonal preemption - transition originating at inner OR state interrupts tran
 again, first OR state should win, as the transitions originate at the same level of hierarchy, and wins by document order
 --> 
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
 	initial="b">

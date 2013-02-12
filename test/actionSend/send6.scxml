@@ -18,6 +18,7 @@
 	This is a quick followup to send5.json, to show that order in the event set does not matter. Transitions with events r and s are switched.
      -->
 <scxml 
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
     initial="a"
 	version="1.0" >

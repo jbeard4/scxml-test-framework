@@ -18,6 +18,7 @@
 illustrates deep history with many parallel states
 --> 
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
 	initial="a">

@@ -3,6 +3,7 @@
 here we have multiple interrupt conflicts, originating from d and a2. 
 -->
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
 	initial="b">

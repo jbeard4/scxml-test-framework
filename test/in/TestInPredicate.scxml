@@ -19,6 +19,7 @@
 This is to test the use of the In() predicate. 
 -->
 <scxml 
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
     initial="p1"
 	version="1.0">

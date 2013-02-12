@@ -18,6 +18,7 @@
 	Illustrates one of the edge cases of these semantics. Because initial transition will be taken in its own small step, triggered event "s" will be "lost" - not availble in the next small step from b1. Will therefore end up in b3.
      -->
 <scxml 
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
     initial="a"
 	version="1.0">

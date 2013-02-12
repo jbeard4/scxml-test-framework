@@ -22,6 +22,7 @@ initial configuration: [c,e1,f1]
 given event t: [c,e2,f2]
 --> 
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
 	initial="b">

@@ -18,6 +18,7 @@
      This is a test to illustrate the event lifeline, and how multiple events are handled. The whole set of triggered events will be dequeued from the inner event queue in the next small step. This is different from scxml, where only one event will be dequeued at a time in the next small step. So, SCXML semantics would lead to f2, whereas our semantics would lead to d.
      -->
 <scxml 
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
     initial="a"
 	version="1.0">

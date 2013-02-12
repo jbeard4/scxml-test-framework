@@ -16,6 +16,7 @@
 -->
 <!-- orthogonal preemption - two transitions originating at internal OR states are interrupted by a transition originating at outer AND state -->
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
 	initial="b">

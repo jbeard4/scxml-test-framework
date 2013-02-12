@@ -19,6 +19,7 @@ initial: [b1,b2]
 after t: [c1,c2]
 --> 
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
 	initial="a">

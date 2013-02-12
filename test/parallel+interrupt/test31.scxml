@@ -19,6 +19,7 @@ here we have multiple interrupt conflicts, originating from d and a2.
 transition from c1 will win, for same reasons listed above.
 final state will be: a1 -->
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0"
 	initial="b">

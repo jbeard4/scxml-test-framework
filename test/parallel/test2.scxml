@@ -19,6 +19,7 @@ initial configuration: [s3,s4,s7,s8]
 after event t: [s5,s6,s9,s10]
 -->
 <scxml
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
 	version="1.0">
 

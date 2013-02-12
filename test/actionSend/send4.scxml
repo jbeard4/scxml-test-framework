@@ -18,6 +18,7 @@
      This is a test to illustrate the event lifeline. In c, event "s" should no longer be in the event queue, as we are using Next Small Step semantics, so we should end up in d. This would not be true if we were using Remainder semantics. 
      -->
 <scxml 
+    datamodel="ecmascript"
 	xmlns="http://www.w3.org/2005/07/scxml"
     initial="a"
 	version="1.0">
