@@ -15,7 +15,7 @@
    limitations under the License.
 -->
 <!--
-    Illustrates one of the edge cases of these semantics. Followup to send7. If we target, not the outer composite state, but the inner state directly, the event will be available in the next small step. This is an example of the way in which these semantics break the synchrony hypthosesis. 
+    Illustrates one of the edge cases of these semantics. Followup to send7. If we target the inner state directly, it should execute the same as if we target the outer state.
      -->
 <scxml 
     datamodel="ecmascript"

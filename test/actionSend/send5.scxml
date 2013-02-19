@@ -15,7 +15,7 @@
    limitations under the License.
 -->
 <!--
-     This is a test to illustrate the event lifeline, and how multiple events are handled. The whole set of triggered events will be dequeued from the inner event queue in the next small step. This is different from scxml, where only one event will be dequeued at a time in the next small step. So, SCXML semantics would lead to f2, whereas our semantics would lead to d.
+     This is a test to illustrate the event lifeline, and how multiple events are handled. Each event will be added to the inner event queue, and dequeued individually in each small step. Note that the order in which events are added to the inner queue matters.
      -->
 <scxml 
     datamodel="ecmascript"
@@ -39,8 +39,8 @@
     </state>
 
     <state id="c">
-        <transition target="f2" event="r"/>
-        <transition target="d"/>
+        <transition target="d" event="r"/>
+        <transition target="f2" />
     </state>
 
     <state id="f1">

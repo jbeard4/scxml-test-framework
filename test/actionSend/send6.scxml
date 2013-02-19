@@ -15,7 +15,7 @@
    limitations under the License.
 -->
 <!--
-    This is a quick followup to send5.json, to show that order in the event set does not matter. Transitions with events r and s are switched.
+    This is a quick followup to send5.json, to show that order in the event set matters. Transitions with events r and s are switched.
      -->
 <scxml 
     datamodel="ecmascript"
@@ -34,8 +34,8 @@
             <raise event="r"/>
         </onentry>
 
-        <transition target="c" event="r"/>
-        <transition target="f1"/>
+        <transition target="f1" event="r"/>
+        <transition target="c"/>
     </state>
 
     <state id="c">
