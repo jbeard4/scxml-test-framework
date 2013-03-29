@@ -1,7 +1,5 @@
-<?xml version="1.0"?>
-<!-- test that the 'initial' value of scxml is respected.  We set the value to deeply nested non-default parallel siblings and
-test that both are entered. -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s11p112 s11p122" datamodel="ecmascript" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><!-- test that the 'initial' value of scxml is respected.  We set the value to deeply nested non-default parallel siblings and
+test that both are entered. --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s11p112 s11p122" datamodel="ecmascript" version="1.0">
 
      
 <state id="s0">

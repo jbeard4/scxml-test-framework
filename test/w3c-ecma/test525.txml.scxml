@@ -1,7 +1,5 @@
-<?xml version="1.0"?>
-<!-- test that <foreach> does a shallow copy, so that modifying the array does not change
-the iteration behavior. -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" datamodel="ecmascript" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><!-- test that <foreach> does a shallow copy, so that modifying the array does not change
+the iteration behavior. --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" datamodel="ecmascript" version="1.0">
   <datamodel>
     <data id="Var1">
       [1,2,3]
@@ -17,7 +15,7 @@ the iteration behavior. -->
     </foreach>
    </onentry>
    
-   <transition cond="" target="pass"/>
+   <transition cond="Var2==3" target="pass"/>
    <transition target="fail"/>
 </state>
 

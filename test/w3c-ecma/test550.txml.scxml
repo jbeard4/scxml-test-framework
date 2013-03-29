@@ -1,10 +1,8 @@
-<?xml version="1.0"?>
-<!-- test that expr can be used to assign a value to a var.  This test uses early binding -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript" binding="early">
+<?xml version="1.0" encoding="UTF-8"?><!-- test that expr can be used to assign a value to a var.  This test uses early binding --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript" binding="early">
     
    <state id="s0">
  
-       <transition cond="" target="pass"/>
+       <transition cond="Var1==2" target="pass"/>
        <transition target="fail"/>
    </state>
    

@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<!--  test that illegal <param> produces error.execution and empty event.data -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" datamodel="ecmascript" initial="s0">
+<?xml version="1.0" encoding="UTF-8"?><!--  test that illegal <param> produces error.execution and empty event.data --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" datamodel="ecmascript" initial="s0">
 
      
  <state id="s0" initial="s01">

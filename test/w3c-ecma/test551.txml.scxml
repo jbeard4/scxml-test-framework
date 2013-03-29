@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<!-- test that inline content can be used to assign a value to a var.  -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" binding="early" datamodel="ecmascript">
+<?xml version="1.0" encoding="UTF-8"?><!-- test that inline content can be used to assign a value to a var.  --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" binding="early" datamodel="ecmascript">
 
     
    <state id="s0">

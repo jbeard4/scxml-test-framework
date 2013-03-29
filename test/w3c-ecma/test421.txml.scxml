@@ -1,7 +1,5 @@
-<?xml version="1.0"?>
-<!-- test that internal events take priority over external ones, and that the processor
-keeps pulling off internal events until it finds one that triggers a transition -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" initial="s1" datamodel="ecmascript">
+<?xml version="1.0" encoding="UTF-8"?><!-- test that internal events take priority over external ones, and that the processor
+keeps pulling off internal events until it finds one that triggers a transition --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" initial="s1" datamodel="ecmascript">
 
  <state id="s1" initial="s11">
    <onentry>

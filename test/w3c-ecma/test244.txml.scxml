@@ -1,9 +1,7 @@
-<?xml version="1.0"?>
-<!-- test that datamodel values can be specified by  namelist.
+<?xml version="1.0" encoding="UTF-8"?><!-- test that datamodel values can be specified by  namelist.
 invoked child will return success ifits Var1 is set to 1, failure otherwise.  
 This test will fail schema validation due to multiple occurrences of Var1,
-but should run correctly. -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+but should run correctly. --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
 <datamodel>
   <data id="Var1" expr="1"/>
   </datamodel>
@@ -21,7 +19,7 @@ but should run correctly. -->
              </datamodel>
    
          <state id="sub0">
-            <transition cond="" target="subFinal">
+            <transition cond="Var1==1" target="subFinal">
              <send target="#_parent" event="success"/>
               </transition>
              <transition target="subFinal">

@@ -1,8 +1,6 @@
-<?xml version="1.0"?>
-<!-- test that if the evaluation of <invoke>'s args causes an error, the 
+<?xml version="1.0" encoding="UTF-8"?><!-- test that if the evaluation of <invoke>'s args causes an error, the 
 invocation is cancelled.  In this test, that means that we don't get done.invoke 
-before the timer goes off.  -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+before the timer goes off.  --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
 
      
 <state id="s0">

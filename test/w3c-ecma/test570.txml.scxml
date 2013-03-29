@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<!-- test that we generate done.state.id when all a parallel state's children are in final states -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="p0" datamodel="ecmascript" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><!-- test that we generate done.state.id when all a parallel state's children are in final states --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="p0" datamodel="ecmascript" version="1.0">
   <datamodel>
     <data id="Var1" expr="0"/>
     </datamodel>
@@ -37,7 +35,7 @@
  
  <state id="s1">
   <!-- if we get done.state.p0, success -->
-  <transition event="done.state.p0" cond="" target="pass"/>
+  <transition event="done.state.p0" cond="Var1==1" target="pass"/>
   <transition event="*" target="fail"/>
   </state>
    

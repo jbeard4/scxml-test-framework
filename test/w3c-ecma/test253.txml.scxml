@@ -1,9 +1,7 @@
-<?xml version="1.0"?>
-<!-- test that the scxml event processor is used in both directions.  If child process uses the 
+<?xml version="1.0" encoding="UTF-8"?><!-- test that the scxml event processor is used in both directions.  If child process uses the 
 scxml event i/o processor to communicate with us, send it an event.  It will send back success if
 this process uses the scxml processor to send the message to it, otherwise failure.  For this test we allow 
-'scxml' as an alternative to the full url.   -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+'scxml' as an alternative to the full url.   --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
 <datamodel>
   <data id="Var1"/>
   </datamodel>
@@ -33,10 +31,10 @@ this process uses the scxml processor to send the message to it, otherwise failu
           </transition>
          </state>
           <state id="sub1">
-            <transition cond="" target="subFinal">
+            <transition cond="Var2=='http://www.w3.org/TR/scxml/#SCXMLEventProcessor'" target="subFinal">
              <send target="#_parent" event="success"/>
                 </transition>
-            <transition cond="" target="subFinal">
+            <transition cond="Var2=='scxml'" target="subFinal">
              <send target="#_parent" event="success"/>
               </transition>
             <transition target="subFinal">
@@ -56,10 +54,10 @@ this process uses the scxml processor to send the message to it, otherwise failu
     
     <state id="s02">
 
-     <transition cond="" target="s03">
+     <transition cond="Var1=='http://www.w3.org/TR/scxml/#SCXMLEventProcessor'" target="s03">
         <send target="#_foo" event="parentToChild"/>
         </transition>
-    <transition cond="" target="s03">
+    <transition cond="Var1=='scxml'" target="s03">
         <send target="#_foo" event="parentToChild"/>
         </transition>
  

@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<!-- we test 'optimally enabled set', specifically that preemption works correctly -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+<?xml version="1.0" encoding="UTF-8"?><!-- we test 'optimally enabled set', specifically that preemption works correctly --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
   <datamodel>
    <data id="Var1" expr="0"/>
    </datamodel>
@@ -47,7 +45,7 @@
 </state>
 
 <state id="s1">
-  <transition cond="" target="pass"/>
+  <transition cond="Var1==2" target="pass"/>
   <transition target="fail"/>
   </state>
 
