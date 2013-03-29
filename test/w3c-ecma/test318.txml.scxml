@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<!-- test that _event stays bound during the onexit and entry into the next state -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript" name="machineName">
+<?xml version="1.0" encoding="UTF-8"?><!-- test that _event stays bound during the onexit and entry into the next state --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript" name="machineName">
 <datamodel>
  <data id="Var1"/>
  </datamodel>
@@ -18,7 +16,7 @@
     <!-- _event should still be bound to 'foo' at this point -->
     <assign location="Var1" expr="_event.name"/>
     </onentry>
-   <transition cond="" target="pass"/> 
+   <transition cond="Var1=='foo'" target="pass"/> 
    <transition target="fail"/>
    </state>
    

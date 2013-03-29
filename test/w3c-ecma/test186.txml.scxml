@@ -1,8 +1,6 @@
-<?xml version="1.0"?>
-<!-- we test that <send> evals its args when it is evaluated, not when the delay interval expires and the
+<?xml version="1.0" encoding="UTF-8"?><!-- we test that <send> evals its args when it is evaluated, not when the delay interval expires and the
 message is actually sent.  If it does, aParam will have the value of 1 (even though var1 has been incremented
-in the interval.)  If var2 ends up == 1, we pass.  Otherwise we fail  -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+in the interval.)  If var2 ends up == 1, we pass.  Otherwise we fail  --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
 <datamodel>
  <data id="Var1" expr="1"/>
  <data id="Var2"/>
@@ -23,7 +21,7 @@ in the interval.)  If var2 ends up == 1, we pass.  Otherwise we fail  -->
  </state>
 
 <state id="s1">
-  <transition cond="" target="pass"/>
+  <transition cond="Var2==1" target="pass"/>
   <transition target="fail"/>
   </state>
        

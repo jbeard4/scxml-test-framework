@@ -1,8 +1,6 @@
-<?xml version="1.0"?>
-<!-- test that <content> child is evaluated when <invoke> is. Var1 is initialized
+<?xml version="1.0" encoding="UTF-8"?><!-- test that <content> child is evaluated when <invoke> is. Var1 is initialized
 with an integer value, then set to an scxml script in the onentry to s0.  If <content>
-is evaluated at the right time, we should get invoke.done, otherwise an error  -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+is evaluated at the right time, we should get invoke.done, otherwise an error  --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
   <datamodel>
     <data id="Var1" expr="1"/>
     </datamodel>

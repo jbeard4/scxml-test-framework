@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<!-- check that the required fields are present in both internal and external events -->
-<scxml xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" datamodel="ecmascript" name="machineName">
+<?xml version="1.0" encoding="UTF-8"?><!-- check that the required fields are present in both internal and external events --><scxml xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" datamodel="ecmascript" name="machineName">
      
  <state id="s0">
    <onentry>

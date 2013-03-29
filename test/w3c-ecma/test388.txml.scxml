@@ -1,10 +1,8 @@
-<?xml version="1.0"?>
-<!-- test that history states works correctly.  The counter Var1 counts how many times
+<?xml version="1.0" encoding="UTF-8"?><!-- test that history states works correctly.  The counter Var1 counts how many times
 we have entered s0.  The initial state is s012.  We then transition to s1, which transitions
 to s0's deep history state.  entering.s012 should be raised, otherwise failure.  Then we transition
 to s02, which transitions to s0's shallow history state.  That should have value s01, and its initial
-state is s011, so we should get entering.s011, otherwise failure.-->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" initial="s012" datamodel="ecmascript">
+state is s011, so we should get entering.s011, otherwise failure.--><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" initial="s012" datamodel="ecmascript">
 <datamodel>
   <data id="Var1" expr="0"/>
   </datamodel>
@@ -15,17 +13,17 @@ state is s011, so we should get entering.s011, otherwise failure.-->
     </onentry>
     
   <!-- the first time through, go to s1, setting  a timer just in case something hangs -->
-  <transition event="entering.s012" cond="" target="s1">
+  <transition event="entering.s012" cond="Var1==1" target="s1">
      <send event="timeout" delay="2s"/>
      </transition>
   
   <!-- the second time, we should get entering.s012.  If so, go to s2, otherwise fail -->
-  <transition event="entering.s012" cond="" target="s2"/>
-    <transition event="entering" cond="" target="fail"/>
+  <transition event="entering.s012" cond="Var1==2" target="s2"/>
+    <transition event="entering" cond="Var1==2" target="fail"/>
     
   <!-- the third time we should get entering-s011. If so, pass, otherwise fail -->
-  <transition event="entering.s011" cond="" target="pass"/>
-  <transition event="entering" cond="" target="fail"/>
+  <transition event="entering.s011" cond="Var1==3" target="pass"/>
+  <transition event="entering" cond="Var1==3" target="fail"/>
  
  <!-- if we timeout, the state machine is hung somewhere, so fail -->
  <transition event="timeout" target="fail"/>
