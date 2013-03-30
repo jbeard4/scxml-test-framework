@@ -1,7 +1,5 @@
-<?xml version="1.0"?>
-<!-- to test that scripts are run as part of executable content, we check that it changes the value of a var at the
-right point. This test is valid only for datamodels that support scripting -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" initial="s0">
+<?xml version="1.0" encoding="UTF-8"?><!-- to test that scripts are run as part of executable content, we check that it changes the value of a var at the
+right point. This test is valid only for datamodels that support scripting --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" initial="s0">
 <datamodel>
 <data id="Var1" expr="0"/>
 </datamodel>
@@ -11,7 +9,7 @@ right point. This test is valid only for datamodels that support scripting -->
    <assign location="Var1" expr="2"/>
    <script>var Var1 = 1</script>
    </onentry>
-   <transition cond="" target="pass"/>
+   <transition cond="Var1==1" target="pass"/>
    <transition target="fail"/>
    </state>
    

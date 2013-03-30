@@ -1,9 +1,7 @@
-<?xml version="1.0"?>
-<!-- a manual test that an autofowarded event has the same fields and values as the original event.
+<?xml version="1.0" encoding="UTF-8"?><!-- a manual test that an autofowarded event has the same fields and values as the original event.
 the child process sends the parent process an event which is forwarded back to it.  
 Both the parent and child process print out the contents of the event. The tester 
-must check if they are the same and report his result.   -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+must check if they are the same and report his result.   --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
 
      
 <state id="s0" initial="s01">

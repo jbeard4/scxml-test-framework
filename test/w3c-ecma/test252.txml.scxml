@@ -1,8 +1,6 @@
-<?xml version="1.0"?>
-<!-- test that we don't process any events received from the invoked process once it is cancelled.  child
+<?xml version="1.0" encoding="UTF-8"?><!-- test that we don't process any events received from the invoked process once it is cancelled.  child
 process tries to send us childToParent in an onexit handler.  If we get it, we fail.  
-timeout indicates success.   -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
+timeout indicates success.   --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" initial="s0" version="1.0" datamodel="ecmascript">
 
      
 <state id="s0" initial="s01">

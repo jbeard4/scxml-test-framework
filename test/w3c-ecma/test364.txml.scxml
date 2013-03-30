@@ -1,8 +1,6 @@
-<?xml version="1.0"?>
-<!-- test that default initial states are entered when a compound state is entered.  First we test
+<?xml version="1.0" encoding="UTF-8"?><!-- test that default initial states are entered when a compound state is entered.  First we test
 the 'initial' attribute, then the initial element, then default to the first child in document order.  
-If we get to s01111 we succeed, if any other state, failure.  -->
-<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" datamodel="ecmascript" initial="s1" version="1.0">
+If we get to s01111 we succeed, if any other state, failure.  --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" datamodel="ecmascript" initial="s1" version="1.0">
 
 <state id="s1" initial="s11p112 s11p122">
   <onentry>
