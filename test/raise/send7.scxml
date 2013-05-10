@@ -16,7 +16,6 @@
 -->
 <!--
     Illustrates one of the edge cases of these semantics. Initial transition (b -> b1) will be taken in the same small-step as (a -> b). Therefore event 's' will be dequeued for the next small-step, and the statechart will transition to state b2 -->
-     -->
 <scxml 
     datamodel="ecmascript"
     xmlns="http://www.w3.org/2005/07/scxml"
