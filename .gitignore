@@ -3,3 +3,4 @@ node_modules
 
 test/w3c-ecma/.DS_Store
 Report *
+.gittoken
