@@ -104,6 +104,11 @@ For example, to run the client on all tests included in this project in parallel
 
 Note that each SCXML document specified should have a JSON test script in the same directory, with the same basename and a ".json" extension. This is already done for the tests included with this project.
 
+Additional properties:
+    
+    -v or --verbose
+    -r or --report, -r html or -r console
+
 Testing Protocol
 ----------------
 

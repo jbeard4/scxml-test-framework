@@ -36,7 +36,8 @@
     "underscore": "*",
     "nopt": "*",
     "node-static": "*",
-    "github": "~0.2.2"
+    "github": "~0.2.2",
+    "cli-table": "0.3.0"
   },
   "engines": {
     "node": ">=0.4.7"
