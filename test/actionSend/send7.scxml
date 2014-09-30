@@ -15,10 +15,7 @@
    limitations under the License.
 -->
 <!--
-    Illustrates one of the edge cases of these semantics. In SCION 2.0, "inital" attribute is no longer normalized
-    such that it is treated as a transition into an initial state. Instead, transition from "a" to "b1" is taken 
-    in the same small-step.
-    Thus event "s" is in the inner queue when machine enters "b1", which causes transition to be taken to "b1".
+    Illustrates one of the edge cases of these semantics. Because initial transition will be taken in its own small step, triggered event "s" will be "lost" - not availble in the next small step from b1. Will therefore end up in b3.
      -->
 <scxml 
     datamodel="ecmascript"
@@ -45,3 +42,6 @@
         </state>
     </state>
 </scxml>
+
+
+
