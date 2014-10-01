@@ -16,7 +16,6 @@ not being executed. --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf
         <foreach item="Var2" index="Var3" array="Var4">
           <assign location="Var1" expr="Var1 + 1"/>
           </foreach>
-        <raise event="foo"/>
         </onentry>
    <transition event="error.execution" target="s1"/>
    <transition event="*" target="fail"/> 
