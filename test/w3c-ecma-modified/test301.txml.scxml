@@ -2,7 +2,8 @@
 Therefore  we fail if it runs at all. This test is valid only for datamodels that support scripting --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:conf="http://www.w3.org/2005/scxml-conformance" version="1.0" initial="s0">
  <script src="D:\foo"/>
      
- <state id="s0">
+<state id="s0">
+    <transition event="error.execution" target="pass"/>
    <transition target="fail"/>
    </state>
    
