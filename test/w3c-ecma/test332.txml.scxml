@@ -18,10 +18,6 @@
    </state>
    
 <state id="s1">
-  <onentry>
-    <log label="Var1" expr="Var1"/>
-    <log label="Var2" expr="Var2"/>
-  </onentry>
 <!-- make sure that the sendid in the error event matches the one generated when send executed -->
   <transition cond="Var1===Var2" target="pass"/>
   <transition target="fail"/>
