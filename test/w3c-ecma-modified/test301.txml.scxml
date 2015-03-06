@@ -4,7 +4,7 @@ Therefore  we fail if it runs at all. This test is valid only for datamodels tha
      
 <state id="s0">
     <transition event="error.execution" target="pass"/>
-   <transition target="fail"/>
+   <transition event="*" target="fail"/>
    </state>
    
 <final id="pass"><onentry><log label="Outcome" expr="'pass'"/></onentry></final>
