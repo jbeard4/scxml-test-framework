@@ -6,7 +6,7 @@
             "nextConfiguration" : ["s1"]
         },
         {
-            "after" : 100,
+            "delayBefore" : 2,
             "event" : { "name" : "t2" },
             "nextConfiguration" : ["pass"]
         }
