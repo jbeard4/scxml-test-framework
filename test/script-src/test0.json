@@ -5,6 +5,9 @@
             "event" : { "name" : "t" },
             "nextConfiguration" : ["b"]
         }
+    ],
+    "attachments": [
+    	"script-0-0.js"
     ]
 }
 
