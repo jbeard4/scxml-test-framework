@@ -1,6 +1,7 @@
 {
     "initialConfiguration" : ["a","b"],
-    "events" : [ ]
+    "events" : [ ],
+    "finalPass": ["a","b"]
 }
 
 
