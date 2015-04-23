@@ -1,7 +1,4 @@
 {
     "initialConfiguration" : ["pass"],
-    "events" : [],
-    "attachments": [
-    	"test552.txt"
-    ]
+    "events" : []
 }
