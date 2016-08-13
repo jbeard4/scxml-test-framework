@@ -35,7 +35,7 @@
     "node": ">=4.2.2"
   },
   "main": "./lib/test-client",
-  "devDependencies": {
+  "dependencies": {
     "cli-table": "^0.3.1",
     "github": "^2.4.1",
     "grunt": "^1.0.1",
