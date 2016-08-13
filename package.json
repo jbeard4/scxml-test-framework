@@ -39,6 +39,7 @@
     "cli-table": "^0.3.1",
     "github": "^2.4.1",
     "grunt": "^1.0.1",
+    "grunt-release": "^0.14.0",
     "load-grunt-tasks": "^3.5.2",
     "node-static": "^0.7.8",
     "nopt": "^3.0.6",
