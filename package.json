@@ -1,6 +1,6 @@
 {
   "name": "scxml-test-framework",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A set of SCXML tests, and an HTTP client test runner for testing against SCXML HTTP test servers.",
   "keywords": [
     "scxml",

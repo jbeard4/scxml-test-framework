@@ -170,3 +170,22 @@ The following are examples of SCXML test server implementations:
 * [JavaScript (Rhino)](https://github.com/jbeard4/SCION/blob/master/test/rhino-test-server.js)
 * [Python](https://github.com/jbeard4/pySCION/blob/master/test/test-server.py)
 * [C#](https://github.com/jbeard4/SCION.NET/blob/master/test/TestServer.cs)
+
+
+Node.JS API
+-----------
+
+```javascript
+function startTests(options, done){}
+```
+
+Supports the following options:
+
+  * file-server-port
+  * file-server-host
+  * test-server-url
+  * parallel
+  * verbose
+  * report
+  * issues
+  * scxmlTestFiles
