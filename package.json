@@ -31,16 +31,18 @@
       "url": "git://github.com/jbeard4/scxml-test-framework.git"
     }
   ],
-  "dependencies": {
-    "request": "*",
-    "underscore": "*",
-    "nopt": "*",
-    "node-static": "*",
-    "github": "~0.2.2",
-    "cli-table": "0.3.0"
-  },
   "engines": {
-    "node": ">=0.4.7"
+    "node": ">=4.2.2"
   },
-  "main": "./lib/test-client"
+  "main": "./lib/test-client",
+  "devDependencies": {
+    "cli-table": "^0.3.1",
+    "github": "^2.4.1",
+    "grunt": "^1.0.1",
+    "load-grunt-tasks": "^3.5.2",
+    "node-static": "^0.7.8",
+    "nopt": "^3.0.6",
+    "request": "^2.74.0",
+    "underscore": "^1.8.3"
+  }
 }
