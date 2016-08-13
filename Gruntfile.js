@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
-  var browsers = require('./grunt/browsers');
 
   grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
