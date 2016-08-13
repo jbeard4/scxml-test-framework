@@ -173,13 +173,13 @@ The following are examples of SCXML test server implementations:
 
 
 Node.JS API
------------
+===========
 
 ```javascript
 function startTests(options, done){}
 ```
 
-Supports the following options:
+options:
 
   * file-server-port
   * file-server-host
