@@ -8,7 +8,7 @@ either we get done.invoke in both cases or in neither case (in which case we tim
     </onentry>
     <transition event="timeout" target="fail"/>
 
-     <invoke type="http://www.w3.org/TR/scxml/" src="file:test242sub1.scxml"/>
+     <invoke type="http://www.w3.org/TR/scxml/" src="file:test242sub1.txml.scxml"/>
      <transition event="done.invoke" target="s02"/>
      <transition event="timeout1" target="s03"/>
    </state>
