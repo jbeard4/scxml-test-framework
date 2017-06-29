@@ -5,7 +5,7 @@ success.  otherwise it will hang and the timeout in this doc signifies failure. 
      
 <state id="s0">
   <onentry>
-    <!--<send event="timeout" delay="3s"/>-->
+    <send event="timeout" delay="3s"/>
     </onentry>
 
  
