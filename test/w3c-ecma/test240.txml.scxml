@@ -48,7 +48,7 @@ should run correctly. --><scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:co
                       <transition cond="Var1==1" target="subFinal2">
                      <send target="#_parent" event="success"/>
                      </transition>
-                  <transition target="subFinal1">
+                  <transition target="subFinal2">
                  <send target="#_parent" event="failure"/>
                  </transition>
                </state>
