@@ -1,5 +1,5 @@
 {
-    "initialConfiguration" : ["s0"],
+    "initialConfiguration" : ["s1"],
     "events" : [
         {
             "after" : 100,
