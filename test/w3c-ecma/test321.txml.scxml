@@ -4,9 +4,6 @@
   </datamodel>
      
  <state id="s0">
- 	<onentry>
- 		<log label="session" expr="_sessionid"/>
- 	</onentry>
 <transition cond="Var1" target="pass"/> 
    <transition cond="true" target="fail"/>
    </state>

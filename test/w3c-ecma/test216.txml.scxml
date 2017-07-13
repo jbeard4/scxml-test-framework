@@ -9,7 +9,7 @@ the runtime value is used, the invocation will succeed --><scxml xmlns="http://w
 <state id="s0">
   <onentry>
     <send event="timeout" delay="5s"/>
-   <assign location="Var1" expr="'file:test216sub1.txml.scxml'"/>
+   <assign location="Var1" expr="'file:test216sub1.scxml'"/>
     </onentry>
   <invoke srcexpr="Var1" type="http://www.w3.org/TR/scxml"/>
   <transition event="done.invoke" target="pass"/>
