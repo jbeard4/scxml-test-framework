@@ -2,7 +2,7 @@
     "initialConfiguration" : ["s01"],
     "events" : [
         {
-            "after" : 4000,
+            "after" : 2000,
             "event" : { "name" : "t1" },
             "nextConfiguration" : ["pass"]
         }
