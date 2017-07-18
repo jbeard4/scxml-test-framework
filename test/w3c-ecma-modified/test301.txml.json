@@ -1,6 +1,0 @@
-{
-    "error": {
-        "statusCode": 500,
-        "bodyRegExp": "unrecognized protocol"
-    } 
-}
