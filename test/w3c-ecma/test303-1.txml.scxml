@@ -12,11 +12,13 @@ right point. This test is valid only for datamodels that support scripting --><s
    <onentry>
    <assign location="Var3" expr="3"/>
    <script>
-      var Var1 = 1,
+      var Var01 = 4;    //local var
+      var Var02 = 5,    //local var
+          Var1 = 1,     //these other vars exist in the datamodel
           Var2 = 2,
           Var3;
-      var Var4 = 4,
-          Var5 = 5;
+      var Var4 = Var01,
+          Var5 = Var02;
     </script>
    </onentry>
    <transition cond="Var1==1 &amp;&amp; Var2==2 &amp;&amp; Var3==3 &amp;&amp; Var4==4 &amp;&amp; Var5==5" target="pass"/>
