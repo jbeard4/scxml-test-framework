@@ -26,7 +26,7 @@
 
     <state id="a">
         <transition target="p" event="t1"/>
-        <transition target="p" event="t6"/>
+        <transition target="hb hc" event="t6"/>
         <transition target="hp" event="t9"/>
     </state>
 
