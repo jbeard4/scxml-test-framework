@@ -15,7 +15,10 @@
    limitations under the License.
 -->
 <!--
+    In SCION <= 4.x semantics:
      This is a test to illustrate the event lifeline. In c, event "s" should no longer be in the event queue, as we are using Next Small Step semantics, so we should end up in d. This would not be true if we were using Remainder semantics. 
+    In SCION > 4 semantics (SCXML semantics):
+      The state machine will enter state 'b', then transition to target 'f1' will be selected over transition to target 'c', because transition to target 'f1' is an eventless transition. In the Algorithm for SCXML interpretation, transitions without events are selected before transitions with events; and transitions with events will only be selected if no eventless transitions are selected.
      -->
 <scxml 
     datamodel="ecmascript"
