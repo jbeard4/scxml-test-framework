@@ -22,7 +22,7 @@
     transitions in e1 and f1 will win, as they are deeper in the hierarchy (even though they come later in document order
 
   In SCION > 4 (SCXML semantics): 
-    transition originating in c will win, as orthogonal component c precedes orthogonal component d in document order (even though transitions originating in d are deeper in the state hierarchy)
+    transition originating in e1 and f1 will win, as orthogonal component d precedes orthogonal component c in document order
 --> 
 <scxml
     datamodel="ecmascript"
@@ -31,10 +31,6 @@
     initial="b">
 
     <parallel id="b">
-        <state id="c">
-            <transition event="t" target="a1"/>
-        </state>
-
         <parallel id="d">
             <state id="e" initial="e1">
                 <state id="e1">
@@ -53,12 +49,17 @@
             </state>
 
         </parallel>
+        <state id="c">
+            <transition event="t" target="a1"/>
+        </state>
+
 
     </parallel>
 
     <state id="a1"/>
 
 </scxml>
+
 
 
 

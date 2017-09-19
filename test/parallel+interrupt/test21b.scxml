@@ -16,7 +16,7 @@
 -->
 <!-- orthogonal preemptions 
 here we have multiple interrupt conflicts, originating from d and a2. 
-transition from c has priority, because orthogonal component c precedes orthogonal component d in document order
+transition from d1 has priority, because orthogonal component d precedes orthogonal component c in document order
 -->
 <scxml
     datamodel="ecmascript"
@@ -28,10 +28,6 @@ transition from c has priority, because orthogonal component c precedes orthogon
 
         <transition event="t" target="a2"/>
 
-        <state id="c">
-            <transition event="t" target="a1"/>
-        </state>
-
         <state id="d" initial="d1">
             <state id="d1">
                 <transition event="t" target="d2"/>
@@ -40,9 +36,15 @@ transition from c has priority, because orthogonal component c precedes orthogon
             <state id="d2"/>
         </state>
 
+        <state id="c">
+            <transition event="t" target="a1"/>
+        </state>
+
+
     </parallel>
 
     <state id="a1"/>
 
     <state id="a2"/>
 </scxml>
+
