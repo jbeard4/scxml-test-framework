@@ -20,6 +20,14 @@
     version="1.0">
 
     <parallel id="p">
+        <state id="b">
+
+            <state id="b1">
+                <transition event="t" target="b2"/>
+            </state>
+
+            <state id="b2"/>
+        </state>
         <state id="a">
 
             <transition event="t" target="a2"/>
@@ -29,15 +37,8 @@
             <state id="a2"/>
         </state>
 
-        <state id="b">
-
-            <state id="b1">
-                <transition event="t" target="b2"/>
-            </state>
-
-            <state id="b2"/>
-        </state>
     </parallel>
 
 
 </scxml>
+
