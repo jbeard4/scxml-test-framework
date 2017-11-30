@@ -7,11 +7,11 @@
         },
         {
             "event" : { "name" : "t2" },
-            "nextConfiguration" : ["a","b"]
+            "nextConfiguration" : ["c"]
         },
         {
             "event" : { "name" : "t3" },
-            "nextConfiguration" : ["a","b"]
+            "nextConfiguration" : ["d"]
         }
     ]
 }
