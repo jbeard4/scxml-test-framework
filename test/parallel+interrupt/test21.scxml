@@ -16,7 +16,8 @@
 -->
 <!-- orthogonal preemptions 
 here we have multiple interrupt conflicts, originating from d and a2. 
-transition from d1 will win, for same reasons listed above -->
+transition from d1 has priority, because orthogonal component d precedes orthogonal component c in document order
+-->
 <scxml
     datamodel="ecmascript"
     xmlns="http://www.w3.org/2005/07/scxml"
@@ -25,9 +26,7 @@ transition from d1 will win, for same reasons listed above -->
 
     <parallel id="b">
 
-        <state id="c">
-            <transition event="t" target="a1"/>
-        </state>
+        <transition event="t" target="a2"/>
 
         <state id="d" initial="d1">
             <state id="d1">
@@ -37,7 +36,10 @@ transition from d1 will win, for same reasons listed above -->
             <state id="d2"/>
         </state>
 
-        <transition event="t" target="a2"/>
+        <state id="c">
+            <transition event="t" target="a1"/>
+        </state>
+
 
     </parallel>
 
@@ -45,3 +47,4 @@ transition from d1 will win, for same reasons listed above -->
 
     <state id="a2"/>
 </scxml>
+

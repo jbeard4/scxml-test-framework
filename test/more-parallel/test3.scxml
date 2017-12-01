@@ -17,7 +17,7 @@
 <scxml 
     datamodel="ecmascript"
     xmlns="http://www.w3.org/2005/07/scxml"
-    version="1.0" >
+    version="1.0">
 
     <parallel id="p">
         <state id="a">

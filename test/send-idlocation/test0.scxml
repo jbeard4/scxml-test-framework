@@ -12,8 +12,8 @@
     <state id="s0">
       <onentry>
         <!-- make sure we do not clobber send/@id when id is $scion.sendid* -->
-        <send id="$scion.sendid0" event="ignore" delay="1ms" type="http://www.w3.org/TR/scxml/#BasicHTTPEventProcessor"/>
-        <send idlocation="httpid" event="ignore" delay="2ms" type="http://www.w3.org/TR/scxml/#BasicHTTPEventProcessor"/>
+        <send id="$scion.sendid0" event="ignore" delay="1ms" type="http://www.w3.org/TR/scxml/#SCXMLEventProcessor"/>
+        <send idlocation="httpid" event="ignore" delay="2ms" type="http://www.w3.org/TR/scxml/#SCXMLEventProcessor"/>
       </onentry>
       <transition event="t1" target="s1"/>
     </state>

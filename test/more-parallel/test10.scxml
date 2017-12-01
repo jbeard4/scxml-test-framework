@@ -46,18 +46,17 @@
 
         <state id="b"/>
 
-        <!-- we've exited and re-entered p, a, so x === 6 here -->
+        <!-- we've exited and re-entered a, without exiting and re-entering p, so x === 4 here -->
         <transition target="c" event="t2" cond="x === 6"/>
     </parallel>
 
     <state id="c">
-        <!-- we've exited p, a here, so x === 8 -->
+        <!-- we've exited p and a here, so x === 8 -->
         <transition target="d" event="t3" cond="x === 8"/>
     </state>
 
     <state id="d"/>
 
 </scxml>
-
 
 

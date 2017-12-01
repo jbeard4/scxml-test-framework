@@ -15,11 +15,14 @@
    limitations under the License.
 -->
 <!-- 
-     orthogonal preemption - inner or states interrupt one-another 
-conflict between transition originating in state c, and transitions originating in e1 and f1, as transition from c interrupt the others
-transitions in e1 and f1 will win, as they are deeper in the hierarchy (even though they come later in document order
-initial configuration: [c,e1,f1]
-given event t: [c,e2,f2]
+  orthogonal preemption - inner or states interrupt one-another 
+    conflict between transition originating in state c, and transitions originating in e1 and f1, as transition from c interrupt the others
+
+  In SCION <= 4:   
+    transitions in e1 and f1 will win, as they are deeper in the hierarchy (even though they come later in document order
+
+  In SCION > 4 (SCXML semantics): 
+    transition originating in c will win, as orthogonal component c precedes orthogonal component d in document order (even though transitions originating in d are deeper in the state hierarchy)
 --> 
 <scxml
     datamodel="ecmascript"
