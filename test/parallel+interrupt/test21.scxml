@@ -15,9 +15,8 @@
    limitations under the License.
 -->
 <!-- orthogonal preemptions 
-here we have multiple interrupt conflicts, originating from d and a2. 
-transition from d1 has priority, because orthogonal component d precedes orthogonal component c in document order
--->
+here we have multiple interrupt conflicts, originating from d1 and c. 
+transition from c will win, because it originates in a parallel region with an earlier document order; even though the transition originating from d1 is deeper in the hierarchy.   -->
 <scxml
     datamodel="ecmascript"
     xmlns="http://www.w3.org/2005/07/scxml"
@@ -26,7 +25,9 @@ transition from d1 has priority, because orthogonal component d precedes orthogo
 
     <parallel id="b">
 
-        <transition event="t" target="a2"/>
+        <state id="c">
+            <transition event="t" target="a1"/>
+        </state>
 
         <state id="d" initial="d1">
             <state id="d1">
@@ -36,10 +37,7 @@ transition from d1 has priority, because orthogonal component d precedes orthogo
             <state id="d2"/>
         </state>
 
-        <state id="c">
-            <transition event="t" target="a1"/>
-        </state>
-
+        <transition event="t" target="a2"/>
 
     </parallel>
 
@@ -47,4 +45,3 @@ transition from d1 has priority, because orthogonal component d precedes orthogo
 
     <state id="a2"/>
 </scxml>
-
