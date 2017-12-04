@@ -13,5 +13,22 @@
             "event" : { "name" : "t3" },
             "nextConfiguration" : ["a","b"]
         }
-    ]
+    ],
+    "legacySemantics" : {
+        "initialConfiguration" : ["a","b"],
+        "events" : [ 
+            {
+                "event" : { "name" : "t1" },
+                "nextConfiguration" : ["a","b"]
+            },
+            {
+                "event" : { "name" : "t2" },
+                "nextConfiguration" : ["c"]
+            },
+            {
+                "event" : { "name" : "t3" },
+                "nextConfiguration" : ["d"]
+            }
+        ]
+    }
 }
