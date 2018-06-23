@@ -1,5 +1,5 @@
 {
-  "name": "@jbeard/scxml-test-framework",
+  "name": "scxml-test-framework",
   "version": "1.1.0",
   "description": "A set of SCXML tests, and an HTTP client test runner for testing against SCXML HTTP test servers.",
   "keywords": [
