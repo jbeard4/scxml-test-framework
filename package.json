@@ -46,6 +46,5 @@
     "nopt": "^3.0.6",
     "request": "^2.74.0",
     "underscore": "^1.8.3"
-  },
-  "private": true
+  }
 }
