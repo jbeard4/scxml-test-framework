@@ -1,5 +1,5 @@
 {
-  "name": "scxml-test-framework",
+  "name": "@scion-scxml/test-framework",
   "version": "2.0.0",
   "description": "A set of SCXML tests, and an HTTP client test runner for testing against SCXML HTTP test servers.",
   "keywords": [
@@ -19,6 +19,7 @@
     "email": "jbeard4@cs.mcgill.ca",
     "url": "https://github.com/jbeard4/scxml-test-framework/issues"
   },
+  "author": "Jacob Beard <jake@jacobeanrnd.com>",
   "licenses": [
     {
       "type": "Apache-2.0",
@@ -45,5 +46,6 @@
     "nopt": "^3.0.6",
     "request": "^2.74.0",
     "underscore": "^1.8.3"
-  }
+  },
+  "private": true
 }
