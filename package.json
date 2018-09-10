@@ -1,6 +1,6 @@
 {
   "name": "@scion-scxml/test-framework",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "description": "A set of SCXML tests, and an HTTP client test runner for testing against SCXML HTTP test servers.",
   "keywords": [
     "scxml",
